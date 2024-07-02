@@ -1,21 +1,21 @@
 # Language-Detection and Translation
-Language Detection
 
 Introduction:
-This project helps you identify the language of any text you input using a method called Naive Bayes classification. It's like a smart tool that can understand different languages and tell you which one your text belongs to. This could be handy if you're dealing with multilingual content or need to automatically categorize text based on language.
+I’ve developed solution using Python to detect languages and seamlessly translate text. I used Python for efficient data processing and the implementation of powerful machine learning algorithms to analyze text patterns accurately. Using the Multinomial Naive Bayes model, I’ve achieved an impressive 95% accuracy in identifying languages and translating them into English when needed.
+
 
 How It Works:
+Dataset Preparation and Training:
+I started with a dataset containing 22 languages, each with 1000 sentences. After handling null values, I used CountVectorizer to convert text data into a structured format suitable for machine learning. The dataset was split into training and testing sets to validate model performance.
 
-Data Gathering: We collected a bunch of text samples from 22 different languages, each containing 1000 sentences. This creates a diverse dataset that our model learns from.
-Training: We taught our model how to recognize languages using a technique called Multinomial Naive Bayes. It's a simple yet effective way to classify text data.
-Testing: To ensure our model is accurate, we tested it on a separate set of data that it hasn't seen before. This helps us gauge how well it can predict the language of new text.
-Getting Started:
+Model Training and Integration:
+Using MultinomialNB, I trained the model to classify languages accurately based on text features. The model demonstrated robust performance with high accuracy scores during testing, ensuring its reliability in real-world applications.
 
-Clone the Repository: First, copy this project to your computer.
-Install Dependencies: You'll need some Python libraries like pandas, numpy, scikit-learn, and googletrans. Don't worry; you can install them all at once by running pip install -r requirements.txt.
-Run the Script: Open the language_detection.py file and run it. You'll be prompted to enter text, and the program will tell you which language it is.
+Real-time Language Detection and Translation:
+Integration with Google Translate API enabled real-time language detection and seamless translation. Upon user input, the system dynamically identifies the language and provides instant translations into English when needed. This feature enhances user interaction by improving accessibility across language barriers.
+
+
 Usage:
-
 Type any text you want to analyze when prompted.
 The program will detect the language automatically.
 If the text is not in English, you can choose to translate it to English for easier understanding.
