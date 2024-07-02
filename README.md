@@ -1,4 +1,4 @@
-# Language-Detection
+# Language-Detection and Translation
 Language Detection
 
 Introduction:
